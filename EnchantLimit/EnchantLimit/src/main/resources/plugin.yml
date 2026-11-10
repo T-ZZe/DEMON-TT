@@ -1,0 +1,14 @@
+name: EnchantLimit
+version: '${project.version}'
+main: fr.enchantlimit.EnchantLimitPlugin
+api-version: '26.3'
+description: Limite les niveaux d'enchantement par equipement via une interface admin
+commands:
+  enchantement:
+    description: Ouvre l'interface de gestion des enchantements
+    aliases: [enchantment, enchlimit]
+    permission: enchantlimit.admin
+permissions:
+  enchantlimit.admin:
+    description: Acces a /enchantement
+    default: op
